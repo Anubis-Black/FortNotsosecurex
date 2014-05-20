@@ -59,8 +59,12 @@ WSGI_APPLICATION = 'FortNotsosecurex.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',  # 'django.db.backends.sqlite3',
+        'NAME': 'fort_notsosecurex_db',  # os.path.join(BASE_DIR, 'db.sqlite3'),
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 

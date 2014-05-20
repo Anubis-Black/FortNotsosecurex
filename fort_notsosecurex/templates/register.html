@@ -3,9 +3,9 @@
 {% block content %}
     <div class="row content">
         <div class="span4 offset3">
-            <div class="login-form">
-                <h2>Login</h2>
-                <form id="login-form" action="/login/" method="post">
+            <div class="register-form">
+                <h2>Register</h2>
+                <form id="register-form" action="/register/" method="post">
                     {% if next %}
                         <input type="hidden" name="next" value="{{ next }}" />
                     {% endif %}
@@ -16,8 +16,8 @@
                         <div class="clearfix">
                             <input id="password" type="password" name="password" placeholder="Password">
                         </div>
-                        <input class="btn btn-primary" type="submit" value="Sign in" />
-                        <a id="register-link" href="/register/" class="btn btn-link">Register</a>
+                        <input class="btn btn-primary" type="submit" value="Register" />
+                        <a id="login-link" href="/login/" class="btn btn-link">Sign in</a>
                     </fieldset>
                 </form>
             </div>
