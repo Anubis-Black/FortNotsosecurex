@@ -1,14 +1,11 @@
 {%  extends 'base.html' %}
 
-{% block content %}
+{% block main %}
     <div class="row content">
-        <div class="span4 offset3">
+        <div class="col-xs-6 col-md-4">
             <div class="login-form">
                 <h2>Login</h2>
                 <form id="login-form" action="/login/" method="post">
-                    {% if next %}
-                        <input type="hidden" name="next" value="{{ next }}" />
-                    {% endif %}
                     <fieldset>
                         <div class="clearfix">
                             <input autofocus id="username" type="text" name="username" placeholder="Username">
