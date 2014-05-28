@@ -4,8 +4,6 @@
 <head>
     <title>Fort Notsosecurex</title>
     <link href="{% static 'styles/base.css' %}" rel="stylesheet" />
-    <link href="{% static 'styles/login.css' %}" rel="stylesheet" />
-    <link href="{% static 'styles/register.css' %}" rel="stylesheet" />
     <link href="{% static 'bootstrap-3.1.1-dist/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
 
     <script src="{% static 'scripts/jquery-2.1.1.min.js' %}"></script>
@@ -14,6 +12,15 @@
 <body>
     <div id="main-wrapper" class="container container-base">
         {% block main %}{% endblock %}
+        {% if messages %}
+            <div class="messages">
+                <ul class="list-group messages">
+                    {% for message in messages %}
+                        <li class="list-group-item{% if message.tags %} {{ message.tags }}{% endif %}">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
     </div>
 </body>
 </html>

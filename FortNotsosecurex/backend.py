@@ -9,7 +9,7 @@ class Backend(object):
                 "SELECT * FROM auth_user WHERE username = '" + username + "' AND password = '" + password + "'")[0]
 
             return user
-        except User.DoesNotExist:
+        except (User.DoesNotExist, IndexError):
             return None
 
     @staticmethod

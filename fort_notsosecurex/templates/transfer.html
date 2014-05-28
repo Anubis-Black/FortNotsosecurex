@@ -1,0 +1,38 @@
+{%  extends 'index.html' %}
+
+{% block content %}
+    {% if user.account_set.all %}
+        <h2>Transfer</h2>
+        <form class="form form-horizontal" action="/transfer/" method="post">
+            <div class="form-group">
+                <div class="col-md-2">
+                    <label for="from_account">From</label>
+                    <select name="from_account" class="form-control" id="from_account">
+                        {% for account in user.account_set.all %}
+                            <option value="{{ account }}">{{ account.number }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-2">
+                    <label for="to_account">To</label>
+                    <select name="to_account" class="form-control" id="to_account">
+                        {% for account in user.account_set.all %}
+                            <option value="{{ account }}">{{ account.number }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-2">
+                    <label for="amount">Amount (USD)</label>
+                    <input type="number" step="0.01" value="sum" name="sum" id="amount" class="form-control"/>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-default">Make transfer</button>
+        </form>
+    {% else %}
+        <div>You have no accounts</div>
+    {% endif %}
+{% endblock %}

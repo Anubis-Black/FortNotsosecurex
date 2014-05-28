@@ -29,18 +29,16 @@
                             {% endif %}
                         </ul>
                     </li>
+                    <li class="nav navbar-nav">
+                        <a href="/transfer/" class="navbar-link">Transfer</a>
+                    </li>
                 </ul>
                 <form class="navbar-form navbar-right" action="/logout/" method="post">
-                    <div class="form-group">
-                        <span class="navbar-text">Welcome, {{ user.username }}</span>
-                    </div>
                     <button type="submit" class="btn btn-default">Logout</button>
                 </form>
+                <span class="navbar-right navbar-text">Welcome, {{ user.username }}</span>
             </div>
         </div>
     </nav>
-
-    <div id="content-wrapper" class="container container-base">
-        {% block content %}{% endblock %}
-    </div>
+    {% block content %}{% endblock %}
 {% endblock %}
