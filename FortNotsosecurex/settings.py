@@ -20,11 +20,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = '8#aa($g_htp8meleutp%8%8agdmuh+8+t!w!l!z0vb+&q%=a!i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Authentication backend
 AUTHENTICATION_BACKENDS = ('FortNotsosecurex.backend.Backend', )
@@ -46,7 +46,6 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
 ROOT_URLCONF = 'FortNotsosecurex.urls'
@@ -60,7 +59,7 @@ WSGI_APPLICATION = 'FortNotsosecurex.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # 'django.db.backends.sqlite3',
-        'NAME': 'fort_notsosecurex_db',  # os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'fort_notsosecurex_db',  #
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',

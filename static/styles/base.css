@@ -1,5 +1,5 @@
 body {
-    margin-top: 20px!important;
+    margin-top: 20pt!important;
 }
 
 .error  {
@@ -13,5 +13,6 @@ body {
 }
 
 .messages {
-    margin-top: 20pt;
+    margin-top: 12pt;
+    margin-left: -12pt;
 }

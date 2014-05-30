@@ -61,6 +61,7 @@ def get_account(request, account_id):
 
     return render_to_response('account.html', {'account': account, 'user': request.user})
 
+
 @login_required(login_url='/login/')
 def make_transfer(request):
     if request.POST:
